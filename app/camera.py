@@ -1,0 +1,1 @@
+# Controle da câmera CSI

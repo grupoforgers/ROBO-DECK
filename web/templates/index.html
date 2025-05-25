@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Robô Autônomo</title>
+    <link rel="stylesheet" href="/static/style.css">
+    <script>
+        async function atualizarSensores() {
+            const res = await fetch('/api/sensores');
+            const data = await res.json();
+            document.getElementById("temp").innerText = data.temperatura + " °C";
+            document.getElementById("umid").innerText = data.umidade + " %";
+            document.getElementById("dist").innerText = data.distancia_cm + " cm";
+            document.getElementById("vel").innerText = data.velocidade_kmh + " km/h";
+            document.getElementById("gps").innerText = `${data.gps.lat.toFixed(6)}, ${data.gps.lon.toFixed(6)}`;
+        }
+        setInterval(atualizarSensores, 2000);
+        window.onload = atualizarSensores;
+    </script>
+</head>
+<body>
+    <h1>Robô Autônomo</h1>
+    <div>
+        <h2>Dados dos Sensores</h2>
+        <p>Temperatura: <strong id="temp">--</strong></p>
+        <p>Umidade: <strong id="umid">--</strong></p>
+        <p>Distância: <strong id="dist">--</strong></p>
+        <p>Velocidade: <strong id="vel">--</strong></p>
+        <p>GPS: <strong id="gps">--</strong></p>
+    </div>
+
+    <div style="margin-top: 20px;">
+        <h2>Controle de Movimento</h2>
+        <button onclick="enviarComando('frente')">Frente</button>
+        <button onclick="enviarComando('re')">Ré</button>
+        <button onclick="enviarComando('esquerda')">Esquerda</button>
+        <button onclick="enviarComando('direita')">Direita</button>
+        <button onclick="enviarComando('parar')">Parar</button>
+    </div>
+
+    <script>
+        async function enviarComando(acao) {
+            await fetch("/api/comando", {
+                method: "POST",
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify({ acao })
+            });
+        }
+    </script>
+</body>
+</html>

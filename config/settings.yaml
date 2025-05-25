@@ -1,0 +1,2 @@
+motor_speed: default
+sensor_polling_rate: 100ms
