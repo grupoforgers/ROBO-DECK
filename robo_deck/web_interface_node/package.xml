@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<package format="3">
+  <name>web_interface_node</name>
+  <version>0.1.0</version>
+  <description>Interface web integrada com ROS 2</description>
+  <maintainer email="user@example.com">Seu Nome</maintainer>
+  <license>MIT</license>
+  <exec_depend>rclpy</exec_depend>
+  <exec_depend>rosbridge_server</exec_depend>
+  <exec_depend>std_msgs</exec_depend>
+</package>
