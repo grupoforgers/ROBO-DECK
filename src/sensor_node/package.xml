@@ -1,9 +1,0 @@
-<package format="3">
-  <name>sensor_node</name>
-  <version>0.0.0</version>
-  <description>Pacote ROS 2 sensor_node</description>
-  <maintainer email="seu_email@exemplo.com">Seu Nome</maintainer>
-  <license>MIT</license>
-  <buildtool_depend>ament_python</buildtool_depend>
-  <exec_depend>rclpy</exec_depend>
-</package>
