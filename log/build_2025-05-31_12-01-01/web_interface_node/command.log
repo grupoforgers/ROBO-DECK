@@ -1,0 +1,1 @@
+Invoking command in '/home/forgers/ros2_ws/src/ROBO-DECK/build/web_interface_node': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/forgers/ros2_ws/src/ROBO-DECK/src/web_interface_node -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCATKIN_SYMLINK_INSTALL=ON -DCMAKE_INSTALL_PREFIX=/home/forgers/ros2_ws/src/ROBO-DECK/install/web_interface_node

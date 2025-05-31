@@ -1,0 +1,178 @@
+[0.427s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build', '--symlink-install']
+[0.427s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=True, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=4, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0xffff8818b290>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0xffff884a5ee0>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0xffff884a5ee0>>)
+[0.599s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.600s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.600s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.600s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.600s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.601s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.601s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/forgers/ros2_ws/src/ROBO-DECK'
+[0.601s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.602s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.602s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.602s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.602s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.603s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.603s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.603s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.603s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.715s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.716s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.716s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.716s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.716s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.716s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.717s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.717s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.718s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.718s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.718s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.718s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.719s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.719s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.719s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[0.719s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[0.720s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[0.720s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[0.720s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[0.720s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[0.720s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[0.720s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[0.721s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[0.721s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[0.721s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[0.721s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[0.721s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[0.721s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[0.722s] Level 1:colcon.colcon_core.package_identification:_identify(src/camera_node) by extensions ['ignore', 'ignore_ament_install']
+[0.722s] Level 1:colcon.colcon_core.package_identification:_identify(src/camera_node) by extension 'ignore'
+[0.722s] Level 1:colcon.colcon_core.package_identification:_identify(src/camera_node) ignored
+[0.723s] Level 1:colcon.colcon_core.package_identification:_identify(src/esp32_bridge) by extensions ['ignore', 'ignore_ament_install']
+[0.723s] Level 1:colcon.colcon_core.package_identification:_identify(src/esp32_bridge) by extension 'ignore'
+[0.723s] Level 1:colcon.colcon_core.package_identification:_identify(src/esp32_bridge) ignored
+[0.724s] Level 1:colcon.colcon_core.package_identification:_identify(src/esp32_uart_bridge_node) by extensions ['ignore', 'ignore_ament_install']
+[0.724s] Level 1:colcon.colcon_core.package_identification:_identify(src/esp32_uart_bridge_node) by extension 'ignore'
+[0.724s] Level 1:colcon.colcon_core.package_identification:_identify(src/esp32_uart_bridge_node) by extension 'ignore_ament_install'
+[0.724s] Level 1:colcon.colcon_core.package_identification:_identify(src/esp32_uart_bridge_node) by extensions ['colcon_pkg']
+[0.724s] Level 1:colcon.colcon_core.package_identification:_identify(src/esp32_uart_bridge_node) by extension 'colcon_pkg'
+[0.725s] Level 1:colcon.colcon_core.package_identification:_identify(src/esp32_uart_bridge_node) by extensions ['colcon_meta']
+[0.725s] Level 1:colcon.colcon_core.package_identification:_identify(src/esp32_uart_bridge_node) by extension 'colcon_meta'
+[0.725s] Level 1:colcon.colcon_core.package_identification:_identify(src/esp32_uart_bridge_node) by extensions ['ros']
+[0.725s] Level 1:colcon.colcon_core.package_identification:_identify(src/esp32_uart_bridge_node) by extension 'ros'
+[0.737s] DEBUG:colcon.colcon_core.package_identification:Package 'src/esp32_uart_bridge_node' with type 'ros.ament_python' and name 'esp32_uart_bridge_node'
+[0.738s] Level 1:colcon.colcon_core.package_identification:_identify(src/sensor_node) by extensions ['ignore', 'ignore_ament_install']
+[0.738s] Level 1:colcon.colcon_core.package_identification:_identify(src/sensor_node) by extension 'ignore'
+[0.738s] Level 1:colcon.colcon_core.package_identification:_identify(src/sensor_node) by extension 'ignore_ament_install'
+[0.739s] Level 1:colcon.colcon_core.package_identification:_identify(src/sensor_node) by extensions ['colcon_pkg']
+[0.739s] Level 1:colcon.colcon_core.package_identification:_identify(src/sensor_node) by extension 'colcon_pkg'
+[0.739s] Level 1:colcon.colcon_core.package_identification:_identify(src/sensor_node) by extensions ['colcon_meta']
+[0.739s] Level 1:colcon.colcon_core.package_identification:_identify(src/sensor_node) by extension 'colcon_meta'
+[0.739s] Level 1:colcon.colcon_core.package_identification:_identify(src/sensor_node) by extensions ['ros']
+[0.739s] Level 1:colcon.colcon_core.package_identification:_identify(src/sensor_node) by extension 'ros'
+[0.741s] DEBUG:colcon.colcon_core.package_identification:Package 'src/sensor_node' with type 'ros.catkin' and name 'sensor_node'
+[0.742s] Level 1:colcon.colcon_core.package_identification:_identify(src/web_interface_node) by extensions ['ignore', 'ignore_ament_install']
+[0.742s] Level 1:colcon.colcon_core.package_identification:_identify(src/web_interface_node) by extension 'ignore'
+[0.742s] Level 1:colcon.colcon_core.package_identification:_identify(src/web_interface_node) by extension 'ignore_ament_install'
+[0.742s] Level 1:colcon.colcon_core.package_identification:_identify(src/web_interface_node) by extensions ['colcon_pkg']
+[0.743s] Level 1:colcon.colcon_core.package_identification:_identify(src/web_interface_node) by extension 'colcon_pkg'
+[0.743s] Level 1:colcon.colcon_core.package_identification:_identify(src/web_interface_node) by extensions ['colcon_meta']
+[0.743s] Level 1:colcon.colcon_core.package_identification:_identify(src/web_interface_node) by extension 'colcon_meta'
+[0.743s] Level 1:colcon.colcon_core.package_identification:_identify(src/web_interface_node) by extensions ['ros']
+[0.743s] Level 1:colcon.colcon_core.package_identification:_identify(src/web_interface_node) by extension 'ros'
+[0.745s] DEBUG:colcon.colcon_core.package_identification:Package 'src/web_interface_node' with type 'ros.catkin' and name 'web_interface_node'
+[0.745s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.745s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.745s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.745s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.746s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.814s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[0.814s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[0.822s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 2 installed packages in /home/forgers/ros2_ws/src/ROBO-DECK/install
+[0.824s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 3 installed packages in /home/forgers/ros2_ws/install
+[0.832s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 205 installed packages in /opt/ros/jazzy
+[0.835s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[0.971s] Level 5:colcon.colcon_core.verb:set package 'esp32_uart_bridge_node' build argument 'cmake_args' from command line to 'None'
+[0.971s] Level 5:colcon.colcon_core.verb:set package 'esp32_uart_bridge_node' build argument 'cmake_target' from command line to 'None'
+[0.972s] Level 5:colcon.colcon_core.verb:set package 'esp32_uart_bridge_node' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.972s] Level 5:colcon.colcon_core.verb:set package 'esp32_uart_bridge_node' build argument 'cmake_clean_cache' from command line to 'False'
+[0.972s] Level 5:colcon.colcon_core.verb:set package 'esp32_uart_bridge_node' build argument 'cmake_clean_first' from command line to 'False'
+[0.972s] Level 5:colcon.colcon_core.verb:set package 'esp32_uart_bridge_node' build argument 'cmake_force_configure' from command line to 'False'
+[0.972s] Level 5:colcon.colcon_core.verb:set package 'esp32_uart_bridge_node' build argument 'ament_cmake_args' from command line to 'None'
+[0.972s] Level 5:colcon.colcon_core.verb:set package 'esp32_uart_bridge_node' build argument 'catkin_cmake_args' from command line to 'None'
+[0.972s] Level 5:colcon.colcon_core.verb:set package 'esp32_uart_bridge_node' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.972s] DEBUG:colcon.colcon_core.verb:Building package 'esp32_uart_bridge_node' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/forgers/ros2_ws/src/ROBO-DECK/build/esp32_uart_bridge_node', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/forgers/ros2_ws/src/ROBO-DECK/install/esp32_uart_bridge_node', 'merge_install': False, 'path': '/home/forgers/ros2_ws/src/ROBO-DECK/src/esp32_uart_bridge_node', 'symlink_install': True, 'test_result_base': None}
+[0.974s] Level 5:colcon.colcon_core.verb:set package 'sensor_node' build argument 'cmake_args' from command line to 'None'
+[0.974s] Level 5:colcon.colcon_core.verb:set package 'sensor_node' build argument 'cmake_target' from command line to 'None'
+[0.974s] Level 5:colcon.colcon_core.verb:set package 'sensor_node' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.974s] Level 5:colcon.colcon_core.verb:set package 'sensor_node' build argument 'cmake_clean_cache' from command line to 'False'
+[0.974s] Level 5:colcon.colcon_core.verb:set package 'sensor_node' build argument 'cmake_clean_first' from command line to 'False'
+[0.974s] Level 5:colcon.colcon_core.verb:set package 'sensor_node' build argument 'cmake_force_configure' from command line to 'False'
+[0.974s] Level 5:colcon.colcon_core.verb:set package 'sensor_node' build argument 'ament_cmake_args' from command line to 'None'
+[0.974s] Level 5:colcon.colcon_core.verb:set package 'sensor_node' build argument 'catkin_cmake_args' from command line to 'None'
+[0.974s] Level 5:colcon.colcon_core.verb:set package 'sensor_node' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.975s] DEBUG:colcon.colcon_core.verb:Building package 'sensor_node' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/forgers/ros2_ws/src/ROBO-DECK/build/sensor_node', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/forgers/ros2_ws/src/ROBO-DECK/install/sensor_node', 'merge_install': False, 'path': '/home/forgers/ros2_ws/src/ROBO-DECK/src/sensor_node', 'symlink_install': True, 'test_result_base': None}
+[0.976s] Level 5:colcon.colcon_core.verb:set package 'web_interface_node' build argument 'cmake_args' from command line to 'None'
+[0.976s] Level 5:colcon.colcon_core.verb:set package 'web_interface_node' build argument 'cmake_target' from command line to 'None'
+[0.976s] Level 5:colcon.colcon_core.verb:set package 'web_interface_node' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.976s] Level 5:colcon.colcon_core.verb:set package 'web_interface_node' build argument 'cmake_clean_cache' from command line to 'False'
+[0.976s] Level 5:colcon.colcon_core.verb:set package 'web_interface_node' build argument 'cmake_clean_first' from command line to 'False'
+[0.976s] Level 5:colcon.colcon_core.verb:set package 'web_interface_node' build argument 'cmake_force_configure' from command line to 'False'
+[0.976s] Level 5:colcon.colcon_core.verb:set package 'web_interface_node' build argument 'ament_cmake_args' from command line to 'None'
+[0.977s] Level 5:colcon.colcon_core.verb:set package 'web_interface_node' build argument 'catkin_cmake_args' from command line to 'None'
+[0.977s] Level 5:colcon.colcon_core.verb:set package 'web_interface_node' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.977s] DEBUG:colcon.colcon_core.verb:Building package 'web_interface_node' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/forgers/ros2_ws/src/ROBO-DECK/build/web_interface_node', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/forgers/ros2_ws/src/ROBO-DECK/install/web_interface_node', 'merge_install': False, 'path': '/home/forgers/ros2_ws/src/ROBO-DECK/src/web_interface_node', 'symlink_install': True, 'test_result_base': None}
+[0.977s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.980s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.981s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/forgers/ros2_ws/src/ROBO-DECK/src/esp32_uart_bridge_node' with build type 'ament_python'
+[0.982s] Level 1:colcon.colcon_core.shell:create_environment_hook('esp32_uart_bridge_node', 'ament_prefix_path')
+[0.989s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.990s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/forgers/ros2_ws/src/ROBO-DECK/install/esp32_uart_bridge_node/share/esp32_uart_bridge_node/hook/ament_prefix_path.ps1'
+[0.993s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/forgers/ros2_ws/src/ROBO-DECK/install/esp32_uart_bridge_node/share/esp32_uart_bridge_node/hook/ament_prefix_path.dsv'
+[0.997s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/forgers/ros2_ws/src/ROBO-DECK/install/esp32_uart_bridge_node/share/esp32_uart_bridge_node/hook/ament_prefix_path.sh'
+[1.000s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.001s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.020s] INFO:colcon.colcon_ros.task.catkin.build:Building ROS package in '/home/forgers/ros2_ws/src/ROBO-DECK/src/sensor_node' with build type 'catkin'
+[1.020s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/forgers/ros2_ws/src/ROBO-DECK/src/sensor_node'
+[1.021s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.021s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.040s] INFO:colcon.colcon_ros.task.catkin.build:Building ROS package in '/home/forgers/ros2_ws/src/ROBO-DECK/src/web_interface_node' with build type 'catkin'
+[1.040s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/forgers/ros2_ws/src/ROBO-DECK/src/web_interface_node'
+[1.041s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.042s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.911s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/forgers/ros2_ws/src/ROBO-DECK/src/esp32_uart_bridge_node'
+[1.912s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.912s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.941s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/forgers/ros2_ws/src/ROBO-DECK/build/sensor_node': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/forgers/ros2_ws/src/ROBO-DECK/src/sensor_node -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCATKIN_SYMLINK_INSTALL=ON -DCMAKE_INSTALL_PREFIX=/home/forgers/ros2_ws/src/ROBO-DECK/install/sensor_node
+[1.958s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/forgers/ros2_ws/src/ROBO-DECK/build/web_interface_node': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/forgers/ros2_ws/src/ROBO-DECK/src/web_interface_node -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCATKIN_SYMLINK_INSTALL=ON -DCMAKE_INSTALL_PREFIX=/home/forgers/ros2_ws/src/ROBO-DECK/install/web_interface_node
+[1.992s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(sensor_node)
+[1.992s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/forgers/ros2_ws/src/ROBO-DECK/build/sensor_node' returned '1': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/forgers/ros2_ws/src/ROBO-DECK/src/sensor_node -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCATKIN_SYMLINK_INSTALL=ON -DCMAKE_INSTALL_PREFIX=/home/forgers/ros2_ws/src/ROBO-DECK/install/sensor_node
+[2.004s] Level 1:colcon.colcon_core.environment:checking '/home/forgers/ros2_ws/src/ROBO-DECK/install/sensor_node' for CMake module files
+[2.006s] Level 1:colcon.colcon_core.environment:checking '/home/forgers/ros2_ws/src/ROBO-DECK/install/sensor_node' for CMake config files
+[2.008s] Level 1:colcon.colcon_core.environment:checking '/home/forgers/ros2_ws/src/ROBO-DECK/install/sensor_node/bin'
+[2.009s] Level 1:colcon.colcon_core.environment:checking '/home/forgers/ros2_ws/src/ROBO-DECK/install/sensor_node/lib/pkgconfig/sensor_node.pc'
+[2.010s] Level 1:colcon.colcon_core.environment:checking '/home/forgers/ros2_ws/src/ROBO-DECK/install/sensor_node/lib/python3.12/site-packages'
+[2.011s] Level 1:colcon.colcon_core.environment:checking '/home/forgers/ros2_ws/src/ROBO-DECK/install/sensor_node/bin'
+[2.012s] INFO:colcon.colcon_core.shell:Creating package script '/home/forgers/ros2_ws/src/ROBO-DECK/install/sensor_node/share/sensor_node/package.ps1'
+[2.015s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/forgers/ros2_ws/src/ROBO-DECK/install/sensor_node/share/sensor_node/package.dsv'
+[2.017s] INFO:colcon.colcon_core.shell:Creating package script '/home/forgers/ros2_ws/src/ROBO-DECK/install/sensor_node/share/sensor_node/package.sh'
+[2.020s] INFO:colcon.colcon_core.shell:Creating package script '/home/forgers/ros2_ws/src/ROBO-DECK/install/sensor_node/share/sensor_node/package.bash'
+[2.023s] INFO:colcon.colcon_core.shell:Creating package script '/home/forgers/ros2_ws/src/ROBO-DECK/install/sensor_node/share/sensor_node/package.zsh'
+[2.026s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/forgers/ros2_ws/src/ROBO-DECK/install/sensor_node/share/colcon-core/packages/sensor_node)
+[5.673s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[5.673s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[5.673s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '1'
+[5.674s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[5.697s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[5.697s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[5.697s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[5.765s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[5.766s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/forgers/ros2_ws/src/ROBO-DECK/install/local_setup.ps1'
+[5.773s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/forgers/ros2_ws/src/ROBO-DECK/install/_local_setup_util_ps1.py'
+[5.782s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/forgers/ros2_ws/src/ROBO-DECK/install/setup.ps1'
+[5.786s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/forgers/ros2_ws/src/ROBO-DECK/install/local_setup.sh'
+[5.788s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/forgers/ros2_ws/src/ROBO-DECK/install/_local_setup_util_sh.py'
+[5.792s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/forgers/ros2_ws/src/ROBO-DECK/install/setup.sh'
+[5.796s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/forgers/ros2_ws/src/ROBO-DECK/install/local_setup.bash'
+[5.798s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/forgers/ros2_ws/src/ROBO-DECK/install/setup.bash'
+[5.803s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/forgers/ros2_ws/src/ROBO-DECK/install/local_setup.zsh'
+[5.806s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/forgers/ros2_ws/src/ROBO-DECK/install/setup.zsh'

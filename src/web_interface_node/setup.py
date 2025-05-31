@@ -13,7 +13,7 @@ setup(
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
-            'web_interface_node_node = web_interface_node.web_interface_node_node:main'
+            'web_server = web_interface_node.web_server:main'
         ],
     },
 )

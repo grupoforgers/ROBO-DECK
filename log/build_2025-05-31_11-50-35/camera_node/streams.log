@@ -1,0 +1,10 @@
+[0.121s] Invoking command in '/home/forgers/ros2_ws/src/ROBO-DECK/build/camera_node': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/forgers/ros2_ws/src/ROBO-DECK/src/camera_node -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCATKIN_SYMLINK_INSTALL=ON -DCMAKE_INSTALL_PREFIX=/home/forgers/ros2_ws/src/ROBO-DECK/install/camera_node
+[1.102s] [33mCMake Warning:
+[1.103s]   Ignoring extra path from command line:
+[1.103s] 
+[1.104s]    "/home/forgers/ros2_ws/src/ROBO-DECK/src/camera_node"
+[1.104s] 
+[1.105s] [0m
+[1.107s] [0mCMake Error: The source directory "/home/forgers/ros2_ws/src/ROBO-DECK/src/camera_node" does not appear to contain CMakeLists.txt.
+[1.107s] Specify --help for usage, or press the help button on the CMake GUI.[0m
+[1.112s] Invoked command in '/home/forgers/ros2_ws/src/ROBO-DECK/build/camera_node' returned '1': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/forgers/ros2_ws/src/ROBO-DECK/src/camera_node -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCATKIN_SYMLINK_INSTALL=ON -DCMAKE_INSTALL_PREFIX=/home/forgers/ros2_ws/src/ROBO-DECK/install/camera_node

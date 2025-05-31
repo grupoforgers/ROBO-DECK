@@ -1,0 +1,16 @@
+[0.897s] Invoking command in '/home/forgers/ros2_ws/src/ROBO-DECK/build/web_interface_node': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/forgers/ros2_ws/src/ROBO-DECK/build/web_interface_node -- -j4 -l4
+[1.093s] Invoked command in '/home/forgers/ros2_ws/src/ROBO-DECK/build/web_interface_node' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/forgers/ros2_ws/src/ROBO-DECK/build/web_interface_node -- -j4 -l4
+[1.143s] Invoking command in '/home/forgers/ros2_ws/src/ROBO-DECK/build/web_interface_node': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/forgers/ros2_ws/src/ROBO-DECK/build/web_interface_node
+[1.181s] -- Install configuration: ""
+[1.182s] -- Installing: /home/forgers/ros2_ws/src/ROBO-DECK/install/web_interface_node/lib/web_interface_node/web_interface_node
+[1.182s] -- Installing: /home/forgers/ros2_ws/src/ROBO-DECK/install/web_interface_node/lib/web_interface_node/web_interface_node/web_sever.py
+[1.184s] -- Installing: /home/forgers/ros2_ws/src/ROBO-DECK/install/web_interface_node/lib/web_interface_node/web_interface_node/__init__.py
+[1.185s] -- Installing: /home/forgers/ros2_ws/src/ROBO-DECK/install/web_interface_node/share/web_interface_node/web
+[1.186s] -- Installing: /home/forgers/ros2_ws/src/ROBO-DECK/install/web_interface_node/share/web_interface_node/web/index.html
+[1.188s] [31mCMake Error at cmake_install.cmake:54 (file):
+[1.188s]   file INSTALL cannot find
+[1.189s]   "/home/forgers/ros2_ws/src/ROBO-DECK/src/web_interface_node/web_interface_node/web_server.py":
+[1.189s]   No such file or directory.
+[1.190s] 
+[1.190s] [0m
+[1.193s] Invoked command in '/home/forgers/ros2_ws/src/ROBO-DECK/build/web_interface_node' returned '1': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/forgers/ros2_ws/src/ROBO-DECK/build/web_interface_node

@@ -1,0 +1,26 @@
+[0.918s] Invoking command in '/home/forgers/ros2_ws/src/ROBO-DECK/build/web_interface_node': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/forgers/ros2_ws/src/ROBO-DECK/src/web_interface_node -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCATKIN_SYMLINK_INSTALL=ON -DCMAKE_INSTALL_PREFIX=/home/forgers/ros2_ws/src/ROBO-DECK/install/web_interface_node
+[1.220s] -- The C compiler identification is GNU 13.3.0
+[1.515s] -- The CXX compiler identification is GNU 13.3.0
+[1.598s] -- Detecting C compiler ABI info
+[2.065s] -- Detecting C compiler ABI info - done
+[2.102s] -- Check for working C compiler: /usr/bin/cc - skipped
+[2.102s] -- Detecting C compile features
+[2.104s] -- Detecting C compile features - done
+[2.154s] -- Detecting CXX compiler ABI info
+[2.678s] -- Detecting CXX compiler ABI info - done
+[2.716s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[2.717s] -- Detecting CXX compile features
+[2.719s] -- Detecting CXX compile features - done
+[2.738s] -- Found ament_cmake: 2.5.4 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[3.463s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+[4.051s] -- Found rclpy: 7.1.4 (/opt/ros/jazzy/share/rclpy/cmake)
+[4.570s] -- Configuring done (3.6s)
+[4.593s] -- Generating done (0.0s)
+[4.596s] [33mCMake Warning:
+[4.597s]   Manually-specified variables were not used by the project:
+[4.597s] 
+[4.598s]     CATKIN_INSTALL_INTO_PREFIX_ROOT
+[4.598s]     CATKIN_SYMLINK_INSTALL
+[4.599s] 
+[4.599s] [0m
+[4.603s] -- Build files have been written to: /home/forgers/ros2_ws/src/ROBO-DECK/build/web_interface_node

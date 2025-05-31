@@ -1,0 +1,10 @@
+[0.920s] Invoking command in '/home/forgers/ros2_ws/src/ROBO-DECK/build/sensor_node': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/forgers/ros2_ws/src/ROBO-DECK/src/sensor_node -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCATKIN_SYMLINK_INSTALL=ON -DCMAKE_INSTALL_PREFIX=/home/forgers/ros2_ws/src/ROBO-DECK/install/sensor_node
+[0.960s] [33mCMake Warning:
+[0.961s]   Ignoring extra path from command line:
+[0.962s] 
+[0.963s]    "/home/forgers/ros2_ws/src/ROBO-DECK/src/sensor_node"
+[0.964s] 
+[0.964s] [0m
+[0.968s] [0mCMake Error: The source directory "/home/forgers/ros2_ws/src/ROBO-DECK/src/sensor_node" does not appear to contain CMakeLists.txt.
+[0.969s] Specify --help for usage, or press the help button on the CMake GUI.[0m
+[0.972s] Invoked command in '/home/forgers/ros2_ws/src/ROBO-DECK/build/sensor_node' returned '1': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/forgers/ros2_ws/src/ROBO-DECK/src/sensor_node -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCATKIN_SYMLINK_INSTALL=ON -DCMAKE_INSTALL_PREFIX=/home/forgers/ros2_ws/src/ROBO-DECK/install/sensor_node

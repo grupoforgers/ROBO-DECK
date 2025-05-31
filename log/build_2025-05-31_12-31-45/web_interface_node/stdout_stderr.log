@@ -1,0 +1,35 @@
+-- Install configuration: ""
+-- Up-to-date: /home/forgers/ros2_ws/src/ROBO-DECK/install/web_interface_node/lib/web_interface_node/web_interface_node
+-- Installing: /home/forgers/ros2_ws/src/ROBO-DECK/install/web_interface_node/lib/web_interface_node/web_interface_node/log
+-- Installing: /home/forgers/ros2_ws/src/ROBO-DECK/install/web_interface_node/lib/web_interface_node/web_interface_node/log/build_2025-05-31_12-08-48
+-- Installing: /home/forgers/ros2_ws/src/ROBO-DECK/install/web_interface_node/lib/web_interface_node/web_interface_node/log/build_2025-05-31_12-08-48/logger_all.log
+-- Installing: /home/forgers/ros2_ws/src/ROBO-DECK/install/web_interface_node/lib/web_interface_node/web_interface_node/log/build_2025-05-31_12-08-48/events.log
+-- Installing: /home/forgers/ros2_ws/src/ROBO-DECK/install/web_interface_node/lib/web_interface_node/web_interface_node/log/COLCON_IGNORE
+-- Installing: /home/forgers/ros2_ws/src/ROBO-DECK/install/web_interface_node/lib/web_interface_node/web_interface_node/log/latest
+-- Installing: /home/forgers/ros2_ws/src/ROBO-DECK/install/web_interface_node/lib/web_interface_node/web_interface_node/log/latest_build
+-- Installing: /home/forgers/ros2_ws/src/ROBO-DECK/install/web_interface_node/lib/web_interface_node/web_interface_node/install
+-- Installing: /home/forgers/ros2_ws/src/ROBO-DECK/install/web_interface_node/lib/web_interface_node/web_interface_node/install/setup.sh
+-- Installing: /home/forgers/ros2_ws/src/ROBO-DECK/install/web_interface_node/lib/web_interface_node/web_interface_node/install/local_setup.bash
+-- Installing: /home/forgers/ros2_ws/src/ROBO-DECK/install/web_interface_node/lib/web_interface_node/web_interface_node/install/COLCON_IGNORE
+-- Installing: /home/forgers/ros2_ws/src/ROBO-DECK/install/web_interface_node/lib/web_interface_node/web_interface_node/install/setup.ps1
+-- Installing: /home/forgers/ros2_ws/src/ROBO-DECK/install/web_interface_node/lib/web_interface_node/web_interface_node/install/.colcon_install_layout
+-- Installing: /home/forgers/ros2_ws/src/ROBO-DECK/install/web_interface_node/lib/web_interface_node/web_interface_node/install/_local_setup_util_sh.py
+-- Installing: /home/forgers/ros2_ws/src/ROBO-DECK/install/web_interface_node/lib/web_interface_node/web_interface_node/install/local_setup.sh
+-- Installing: /home/forgers/ros2_ws/src/ROBO-DECK/install/web_interface_node/lib/web_interface_node/web_interface_node/install/setup.bash
+-- Installing: /home/forgers/ros2_ws/src/ROBO-DECK/install/web_interface_node/lib/web_interface_node/web_interface_node/install/setup.zsh
+-- Installing: /home/forgers/ros2_ws/src/ROBO-DECK/install/web_interface_node/lib/web_interface_node/web_interface_node/install/_local_setup_util_ps1.py
+-- Installing: /home/forgers/ros2_ws/src/ROBO-DECK/install/web_interface_node/lib/web_interface_node/web_interface_node/install/local_setup.zsh
+-- Installing: /home/forgers/ros2_ws/src/ROBO-DECK/install/web_interface_node/lib/web_interface_node/web_interface_node/install/local_setup.ps1
+-- Up-to-date: /home/forgers/ros2_ws/src/ROBO-DECK/install/web_interface_node/lib/web_interface_node/web_interface_node/web_sever.py
+-- Up-to-date: /home/forgers/ros2_ws/src/ROBO-DECK/install/web_interface_node/lib/web_interface_node/web_interface_node/__init__.py
+-- Installing: /home/forgers/ros2_ws/src/ROBO-DECK/install/web_interface_node/lib/web_interface_node/web_interface_node/build
+-- Installing: /home/forgers/ros2_ws/src/ROBO-DECK/install/web_interface_node/lib/web_interface_node/web_interface_node/build/COLCON_IGNORE
+-- Installing: /home/forgers/ros2_ws/src/ROBO-DECK/install/web_interface_node/lib/web_interface_node/web_interface_node/build/.built_by
+-- Up-to-date: /home/forgers/ros2_ws/src/ROBO-DECK/install/web_interface_node/share/web_interface_node/web
+-- Up-to-date: /home/forgers/ros2_ws/src/ROBO-DECK/install/web_interface_node/share/web_interface_node/web/index.html
+[31mCMake Error at cmake_install.cmake:54 (file):
+  file INSTALL cannot find
+  "/home/forgers/ros2_ws/src/ROBO-DECK/src/web_interface_node/web_interface_node/web_server.py":
+  No such file or directory.
+
+[0m
