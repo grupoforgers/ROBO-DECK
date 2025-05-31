@@ -170,9 +170,29 @@
   <div style="padding: 1rem">
     <iframe src="https://maps.google.com/maps?q=-23.5505,-46.6333&z=15&output=embed"></iframe>
   </div>
-
+  <script src="https://cdn.jsdelivr.net/npm/roslib/build/roslib.min.js"></script>
   <script>
-    // Aqui você pode adicionar a lógica com fetch, websocket ou ROSBridge para preencher os dados dinâmicos
+    const ros = new ROSLIB.Ros({
+      url: 'ws://192.168.1.137:9090'  // IP do seu Raspberry Pi
+    });
+
+    ros.on('connection', () => {
+      console.log('Conectado ao ROS 2 via rosbridge!');
+    });
+
+    const cmdVel = new ROSLIB.Topic({
+      ros: ros,
+      name: '/cmd_vel',
+      messageType: 'geometry_msgs/Twist'
+    });
+
+    function enviarComando(lin, ang) {
+      const twist = new ROSLIB.Message({
+        linear: { x: lin, y: 0, z: 0 },
+        angular: { x: 0, y: 0, z: ang }
+      });
+      cmdVel.publish(twist);
+    }
   </script>
 </body>
 </html>
