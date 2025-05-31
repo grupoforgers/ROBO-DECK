@@ -3,113 +3,101 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Interface de Controle</title>
+  <title>Interface de Controle - Robô Autônomo</title>
   <style>
-    :root {
-      --bg-color: #121212;
-      --card-bg: #3d4050;
-      --accent-color: #03dac6;
-      --text-color: #e0e0e0;
-      --highlight: #333;
-    }
     body {
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background-color: var(--bg-color);
+      background-color: #121212;
+      color: #f0f0f0;
       margin: 0;
       padding: 0;
-      color: var(--text-color);
     }
     header {
-      background-color: var(--highlight);
-      padding: 0.5rem 1rem;
+      background-color: #1f1f1f;
+      padding: 0.75rem;
+      text-align: center;
+      font-size: 1.2rem;
+    }
+    .status-bar {
       display: flex;
       justify-content: space-between;
       align-items: center;
-      font-size: 0.9rem;
+      background-color: #2c2c2c;
+      padding: 0.5rem 1rem;
+      font-size: 0.95rem;
     }
     .main {
       display: flex;
-      flex-wrap: wrap;
+      flex-direction: column;
+      gap: 1rem;
       padding: 1rem;
+    }
+    .top-section {
+      display: flex;
+      flex-wrap: wrap;
       gap: 1rem;
     }
-    .video-section {
-      flex: 2;
-      min-width: 320px;
-    }
-    .control-section {
+    .video-section, .control-section {
       flex: 1;
-      min-width: 280px;
+      min-width: 320px;
+      background-color: #1e1e1e;
+      border-radius: 12px;
+      padding: 1rem;
     }
-    .content-section {
+    .video-player {
+      width: 100%;
+      border-radius: 8px;
+    }
+    .controls {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 1rem;
+    }
+    .arrows button {
+      background: #333;
+      border: none;
+      color: #fff;
+      font-size: 1.5rem;
+      padding: 0.5rem 1rem;
+      margin: 0.25rem;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+    .slider {
+      width: 80%;
+    }
+    .grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
       gap: 1rem;
+    }
+    .card {
+      background-color: #1e1e1e;
       padding: 1rem;
+      border-radius: 10px;
     }
-    .panel {
-      background-color: var(--card-bg);
-      padding: 1rem;
-      border-radius: 12px;
-    }
-    .joystick-grid {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 0.5rem;
-      text-align: center;
-    }
-    .joystick-grid button {
-      padding: 0.7rem;
-      background-color: var(--highlight);
-      border: none;
-      border-radius: 8px;
-      color: var(--text-color);
-      font-size: 1.2rem;
-    }
-    .slider {
+    canvas, iframe {
       width: 100%;
-    }
-    iframe, canvas {
-      width: 100%;
-      border: none;
-      border-radius: 8px;
       height: 300px;
-    }
-    video {
-      width: 100%;
-      max-height: 400px;
-      border-radius: 12px;
-    }
-    @media (max-width: 768px) {
-      .main {
-        flex-direction: column;
-      }
+      border: none;
+      border-radius: 10px;
     }
   </style>
 </head>
 <body>
-  <header>
-    <div><strong>Wi-Fi:</strong> -52 dBm</div>
-    <div><strong>Status:</strong> Operacional</div>
-  </header>
+  <header>Interface de Controle do Robô Autônomo</header>
+  <div class="status-bar">
+    <div>Wi-Fi: <strong>-52 dBm</strong></div>
+    <div>Status: <strong style="color:limegreen;">Operacional</strong></div>
+    <div>Aviso: <strong style="color:orange;">Objeto à frente!</strong></div>
+  </div>
 
   <div class="main">
-    <div class="control-section">
-      <div class="panel">
-        <h2>Controle do Robô</h2>
-        <div class="joystick-grid">
-          <button>↖</button><button>↑</button><button>↗</button>
-          <button>←</button><button>⏺</button><button>→</button>
-          <button>↙</button><button>↓</button><button>↘</button>
-        </div>
-        <label for="speed">Aceleração</label>
-        <input type="range" id="speed" class="slider" min="0" max="100">
-      </div>
-    </div>
-    <div class="video-section">
-      <div class="panel">
+    <div class="top-section">
+      <div class="video-section">
         <h2>Visão da Câmera</h2>
-        <video controls autoplay muted></video>
+        <video class="video-player" controls autoplay muted src="http://localhost:8080/stream?topic=/image_raw"></video>
         <label>Resolução:
           <select>
             <option>640x480</option>
@@ -125,73 +113,79 @@
           </select>
         </label>
       </div>
+
+      <div class="control-section">
+        <h2>Controle do Robô</h2>
+        <div class="controls">
+          <div class="arrows">
+            <div>
+              <button onclick="sendCmd('up')">⬆️</button>
+            </div>
+            <div>
+              <button onclick="sendCmd('left')">⬅️</button>
+              <button onclick="sendCmd('stop')">⏹️</button>
+              <button onclick="sendCmd('right')">➡️</button>
+            </div>
+            <div>
+              <button onclick="sendCmd('down')">⬇️</button>
+            </div>
+          </div>
+          <input type="range" class="slider" min="0" max="100" value="50" onchange="setSpeed(this.value)" />
+          <label>Velocidade</label>
+          <input type="file" accept="audio/mp3">
+        </div>
+      </div>
+    </div>
+
+    <div class="grid">
+      <div class="card">
+        <h3>GPS e Bússola</h3>
+        <p>GPS: <strong>-23.5505, -46.6333</strong></p>
+        <p>Bússola: <strong>124°</strong></p>
+      </div>
+      <div class="card">
+        <h3>Temperatura e Umidade</h3>
+        <p>Temperatura: <strong>25 °C</strong></p>
+        <p>Umidade: <strong>60%</strong></p>
+      </div>
+      <div class="card">
+        <h3>Acelerômetro</h3>
+        <p>X: <strong>0.1</strong>, Y: <strong>-0.2</strong>, Z: <strong>9.8</strong></p>
+      </div>
+      <div class="card">
+        <h3>Servos (Direção das Rodas)</h3>
+        <ul>
+          <li>Frontal Esquerda: 30°</li>
+          <li>Frontal Direita: 30°</li>
+          <li>Traseira Esquerda: 0°</li>
+          <li>Traseira Direita: 0°</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>Sensores Ultrassônicos</h3>
+        <canvas id="sonarChart"></canvas>
+      </div>
+      <div class="card">
+        <h3>Sensores Sharp</h3>
+        <canvas id="sharpChart"></canvas>
+      </div>
+    </div>
+
+    <div class="card">
+      <h3>Localização no Mapa</h3>
+      <iframe src="https://maps.google.com/maps?q=-23.5505,-46.6333&z=15&output=embed"></iframe>
     </div>
   </div>
 
-  <div class="content-section">
-    <div class="panel">
-      <h3>Enviar MP3</h3>
-      <input type="file" accept="audio/mp3">
-    </div>
-    <div class="panel">
-      <h3>GPS</h3>
-      <p>-23.5505, -46.6333</p>
-    </div>
-    <div class="panel">
-      <h3>Sensores Ambientais</h3>
-      <p>Temperatura: 25 °C</p>
-      <p>Umidade: 60%</p>
-      <p>Acelerômetro: X: 0.1, Y: -0.2, Z: 9.8</p>
-      <p>Bússola: 124°</p>
-    </div>
-    <div class="panel">
-      <h3>Direção das Rodas</h3>
-      <ul>
-        <li>Frontal Esquerda: 30°</li>
-        <li>Frontal Direita: 30°</li>
-        <li>Traseira Esquerda: 0°</li>
-        <li>Traseira Direita: 0°</li>
-      </ul>
-    </div>
-    <div class="panel">
-      <h3>Sonar (Ultrassônicos)</h3>
-      <canvas id="sonarChart"></canvas>
-    </div>
-    <div class="panel">
-      <h3>Sharp (Inferior e Frontal)</h3>
-      <canvas id="sharpChart"></canvas>
-    </div>
-    <div class="panel">
-      <h3>Avisos</h3>
-      <p>Objeto detectado à frente!</p>
-    </div>
-  </div>
-
-  <div style="padding: 1rem">
-    <iframe src="https://maps.google.com/maps?q=-23.5505,-46.6333&z=15&output=embed"></iframe>
-  </div>
-  <script src="https://cdn.jsdelivr.net/npm/roslib/build/roslib.min.js"></script>
   <script>
-    const ros = new ROSLIB.Ros({
-      url: 'ws://192.168.1.137:9090'  // IP do seu Raspberry Pi
-    });
+    function sendCmd(cmd) {
+      console.log("Enviando comando:", cmd);
+      // Enviar comando via WebSocket ou REST API para o ROS Bridge
+    }
 
-    ros.on('connection', () => {
-      console.log('Conectado ao ROS 2 via rosbridge!');
-    });
-
-    const cmdVel = new ROSLIB.Topic({
-      ros: ros,
-      name: '/cmd_vel',
-      messageType: 'geometry_msgs/Twist'
-    });
-
-    function enviarComando(lin, ang) {
-      const twist = new ROSLIB.Message({
-        linear: { x: lin, y: 0, z: 0 },
-        angular: { x: 0, y: 0, z: ang }
-      });
-      cmdVel.publish(twist);
+    function setSpeed(value) {
+      console.log("Velocidade:", value);
+      // Enviar valor de velocidade
     }
   </script>
 </body>
