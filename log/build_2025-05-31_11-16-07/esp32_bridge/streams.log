@@ -1,0 +1,10 @@
+[0.094s] Invoking command in '/home/forgers/ros2_ws/src/ROBO-DECK/build/esp32_bridge': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/forgers/ros2_ws/src/ROBO-DECK/src/esp32_bridge -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCATKIN_SYMLINK_INSTALL=ON -DCMAKE_INSTALL_PREFIX=/home/forgers/ros2_ws/src/ROBO-DECK/install/esp32_bridge
+[0.976s] [33mCMake Warning:
+[0.977s]   Ignoring extra path from command line:
+[0.977s] 
+[0.977s]    "/home/forgers/ros2_ws/src/ROBO-DECK/src/esp32_bridge"
+[0.978s] 
+[0.978s] [0m
+[0.978s] [0mCMake Error: The source directory "/home/forgers/ros2_ws/src/ROBO-DECK/src/esp32_bridge" does not appear to contain CMakeLists.txt.
+[0.979s] Specify --help for usage, or press the help button on the CMake GUI.[0m
+[1.016s] Invoked command in '/home/forgers/ros2_ws/src/ROBO-DECK/build/esp32_bridge' returned '1': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/forgers/ros2_ws/src/ROBO-DECK/src/esp32_bridge -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCATKIN_SYMLINK_INSTALL=ON -DCMAKE_INSTALL_PREFIX=/home/forgers/ros2_ws/src/ROBO-DECK/install/esp32_bridge
