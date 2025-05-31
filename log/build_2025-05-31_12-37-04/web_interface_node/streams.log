@@ -1,0 +1,39 @@
+[0.921s] Invoking command in '/home/forgers/ros2_ws/src/ROBO-DECK/build/web_interface_node': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/forgers/ros2_ws/src/ROBO-DECK/build/web_interface_node -- -j4 -l4
+[1.117s] Invoked command in '/home/forgers/ros2_ws/src/ROBO-DECK/build/web_interface_node' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/forgers/ros2_ws/src/ROBO-DECK/build/web_interface_node -- -j4 -l4
+[1.180s] Invoking command in '/home/forgers/ros2_ws/src/ROBO-DECK/build/web_interface_node': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/forgers/ros2_ws/src/ROBO-DECK/build/web_interface_node
+[1.226s] -- Install configuration: ""
+[1.227s] -- Up-to-date: /home/forgers/ros2_ws/src/ROBO-DECK/install/web_interface_node/lib/web_interface_node/web_interface_node
+[1.227s] -- Up-to-date: /home/forgers/ros2_ws/src/ROBO-DECK/install/web_interface_node/lib/web_interface_node/web_interface_node/log
+[1.228s] -- Up-to-date: /home/forgers/ros2_ws/src/ROBO-DECK/install/web_interface_node/lib/web_interface_node/web_interface_node/log/build_2025-05-31_12-08-48
+[1.232s] -- Up-to-date: /home/forgers/ros2_ws/src/ROBO-DECK/install/web_interface_node/lib/web_interface_node/web_interface_node/log/build_2025-05-31_12-08-48/logger_all.log
+[1.236s] -- Up-to-date: /home/forgers/ros2_ws/src/ROBO-DECK/install/web_interface_node/lib/web_interface_node/web_interface_node/log/build_2025-05-31_12-08-48/events.log
+[1.236s] -- Up-to-date: /home/forgers/ros2_ws/src/ROBO-DECK/install/web_interface_node/lib/web_interface_node/web_interface_node/log/COLCON_IGNORE
+[1.237s] -- Up-to-date: /home/forgers/ros2_ws/src/ROBO-DECK/install/web_interface_node/lib/web_interface_node/web_interface_node/log/latest
+[1.238s] -- Up-to-date: /home/forgers/ros2_ws/src/ROBO-DECK/install/web_interface_node/lib/web_interface_node/web_interface_node/log/latest_build
+[1.242s] -- Up-to-date: /home/forgers/ros2_ws/src/ROBO-DECK/install/web_interface_node/lib/web_interface_node/web_interface_node/install
+[1.244s] -- Up-to-date: /home/forgers/ros2_ws/src/ROBO-DECK/install/web_interface_node/lib/web_interface_node/web_interface_node/install/setup.sh
+[1.247s] -- Up-to-date: /home/forgers/ros2_ws/src/ROBO-DECK/install/web_interface_node/lib/web_interface_node/web_interface_node/install/local_setup.bash
+[1.248s] -- Up-to-date: /home/forgers/ros2_ws/src/ROBO-DECK/install/web_interface_node/lib/web_interface_node/web_interface_node/install/COLCON_IGNORE
+[1.248s] -- Up-to-date: /home/forgers/ros2_ws/src/ROBO-DECK/install/web_interface_node/lib/web_interface_node/web_interface_node/install/setup.ps1
+[1.249s] -- Up-to-date: /home/forgers/ros2_ws/src/ROBO-DECK/install/web_interface_node/lib/web_interface_node/web_interface_node/install/.colcon_install_layout
+[1.253s] -- Up-to-date: /home/forgers/ros2_ws/src/ROBO-DECK/install/web_interface_node/lib/web_interface_node/web_interface_node/install/_local_setup_util_sh.py
+[1.254s] -- Up-to-date: /home/forgers/ros2_ws/src/ROBO-DECK/install/web_interface_node/lib/web_interface_node/web_interface_node/install/local_setup.sh
+[1.254s] -- Up-to-date: /home/forgers/ros2_ws/src/ROBO-DECK/install/web_interface_node/lib/web_interface_node/web_interface_node/install/setup.bash
+[1.255s] -- Up-to-date: /home/forgers/ros2_ws/src/ROBO-DECK/install/web_interface_node/lib/web_interface_node/web_interface_node/install/setup.zsh
+[1.255s] -- Up-to-date: /home/forgers/ros2_ws/src/ROBO-DECK/install/web_interface_node/lib/web_interface_node/web_interface_node/install/_local_setup_util_ps1.py
+[1.259s] -- Up-to-date: /home/forgers/ros2_ws/src/ROBO-DECK/install/web_interface_node/lib/web_interface_node/web_interface_node/install/local_setup.zsh
+[1.260s] -- Up-to-date: /home/forgers/ros2_ws/src/ROBO-DECK/install/web_interface_node/lib/web_interface_node/web_interface_node/install/local_setup.ps1
+[1.264s] -- Up-to-date: /home/forgers/ros2_ws/src/ROBO-DECK/install/web_interface_node/lib/web_interface_node/web_interface_node/web_sever.py
+[1.264s] -- Up-to-date: /home/forgers/ros2_ws/src/ROBO-DECK/install/web_interface_node/lib/web_interface_node/web_interface_node/__init__.py
+[1.265s] -- Up-to-date: /home/forgers/ros2_ws/src/ROBO-DECK/install/web_interface_node/lib/web_interface_node/web_interface_node/build
+[1.269s] -- Up-to-date: /home/forgers/ros2_ws/src/ROBO-DECK/install/web_interface_node/lib/web_interface_node/web_interface_node/build/COLCON_IGNORE
+[1.270s] -- Up-to-date: /home/forgers/ros2_ws/src/ROBO-DECK/install/web_interface_node/lib/web_interface_node/web_interface_node/build/.built_by
+[1.270s] -- Up-to-date: /home/forgers/ros2_ws/src/ROBO-DECK/install/web_interface_node/share/web_interface_node/web
+[1.271s] -- Up-to-date: /home/forgers/ros2_ws/src/ROBO-DECK/install/web_interface_node/share/web_interface_node/web/index.html
+[1.275s] [31mCMake Error at cmake_install.cmake:54 (file):
+[1.276s]   file INSTALL cannot find
+[1.276s]   "/home/forgers/ros2_ws/src/ROBO-DECK/src/web_interface_node/web_interface_node/web_server.py":
+[1.277s]   No such file or directory.
+[1.277s] 
+[1.279s] [0m
+[1.280s] Invoked command in '/home/forgers/ros2_ws/src/ROBO-DECK/build/web_interface_node' returned '1': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/forgers/ros2_ws/src/ROBO-DECK/build/web_interface_node

@@ -7,7 +7,7 @@ find_package(rclpy REQUIRED)
 install(DIRECTORY web_interface_node DESTINATION lib/${PROJECT_NAME})
 install(DIRECTORY web DESTINATION share/${PROJECT_NAME})
 install(PROGRAMS
-  web_interface_node/web_server.py
+  web_server.py
   DESTINATION lib/${PROJECT_NAME}
 )
 

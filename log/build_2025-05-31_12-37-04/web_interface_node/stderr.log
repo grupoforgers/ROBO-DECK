@@ -1,0 +1,6 @@
+[31mCMake Error at cmake_install.cmake:54 (file):
+  file INSTALL cannot find
+  "/home/forgers/ros2_ws/src/ROBO-DECK/src/web_interface_node/web_interface_node/web_server.py":
+  No such file or directory.
+
+[0m

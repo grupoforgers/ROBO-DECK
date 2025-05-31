@@ -1,0 +1,66 @@
+[0.046s] Invoking command in '/home/forgers/ros2_ws/src/web_interface_node/build/web_interface_node': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/forgers/ros2_ws/src/web_interface_node -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCATKIN_SYMLINK_INSTALL=ON -DCMAKE_INSTALL_PREFIX=/home/forgers/ros2_ws/src/web_interface_node/install/web_interface_node
+[0.356s] -- The C compiler identification is GNU 13.3.0
+[0.633s] -- The CXX compiler identification is GNU 13.3.0
+[0.722s] -- Detecting C compiler ABI info
+[1.191s] -- Detecting C compiler ABI info - done
+[1.226s] -- Check for working C compiler: /usr/bin/cc - skipped
+[1.226s] -- Detecting C compile features
+[1.228s] -- Detecting C compile features - done
+[1.273s] -- Detecting CXX compiler ABI info
+[1.772s] -- Detecting CXX compiler ABI info - done
+[1.808s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[1.809s] -- Detecting CXX compile features
+[1.811s] -- Detecting CXX compile features - done
+[1.830s] -- Found ament_cmake: 2.5.4 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[2.515s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+[3.082s] -- Found rclpy: 7.1.4 (/opt/ros/jazzy/share/rclpy/cmake)
+[3.489s] -- Configuring done (3.4s)
+[3.510s] -- Generating done (0.0s)
+[3.513s] [33mCMake Warning:
+[3.513s]   Manually-specified variables were not used by the project:
+[3.514s] 
+[3.514s]     CATKIN_INSTALL_INTO_PREFIX_ROOT
+[3.515s]     CATKIN_SYMLINK_INSTALL
+[3.515s] 
+[3.516s] [0m
+[3.520s] -- Build files have been written to: /home/forgers/ros2_ws/src/web_interface_node/build/web_interface_node
+[3.537s] Invoked command in '/home/forgers/ros2_ws/src/web_interface_node/build/web_interface_node' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/forgers/ros2_ws/src/web_interface_node -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCATKIN_SYMLINK_INSTALL=ON -DCMAKE_INSTALL_PREFIX=/home/forgers/ros2_ws/src/web_interface_node/install/web_interface_node
+[3.543s] Invoking command in '/home/forgers/ros2_ws/src/web_interface_node/build/web_interface_node': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/forgers/ros2_ws/src/web_interface_node/build/web_interface_node -- -j4 -l4
+[3.729s] Invoked command in '/home/forgers/ros2_ws/src/web_interface_node/build/web_interface_node' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/forgers/ros2_ws/src/web_interface_node/build/web_interface_node -- -j4 -l4
+[3.777s] Invoking command in '/home/forgers/ros2_ws/src/web_interface_node/build/web_interface_node': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/forgers/ros2_ws/src/web_interface_node/build/web_interface_node
+[3.814s] -- Install configuration: ""
+[3.815s] -- Installing: /home/forgers/ros2_ws/src/web_interface_node/install/web_interface_node/lib/web_interface_node/web_interface_node
+[3.815s] -- Installing: /home/forgers/ros2_ws/src/web_interface_node/install/web_interface_node/lib/web_interface_node/web_interface_node/log
+[3.816s] -- Installing: /home/forgers/ros2_ws/src/web_interface_node/install/web_interface_node/lib/web_interface_node/web_interface_node/log/build_2025-05-31_12-08-48
+[3.817s] -- Installing: /home/forgers/ros2_ws/src/web_interface_node/install/web_interface_node/lib/web_interface_node/web_interface_node/log/build_2025-05-31_12-08-48/logger_all.log
+[3.818s] -- Installing: /home/forgers/ros2_ws/src/web_interface_node/install/web_interface_node/lib/web_interface_node/web_interface_node/log/build_2025-05-31_12-08-48/events.log
+[3.819s] -- Installing: /home/forgers/ros2_ws/src/web_interface_node/install/web_interface_node/lib/web_interface_node/web_interface_node/log/COLCON_IGNORE
+[3.820s] -- Installing: /home/forgers/ros2_ws/src/web_interface_node/install/web_interface_node/lib/web_interface_node/web_interface_node/log/latest
+[3.821s] -- Installing: /home/forgers/ros2_ws/src/web_interface_node/install/web_interface_node/lib/web_interface_node/web_interface_node/log/latest_build
+[3.821s] -- Installing: /home/forgers/ros2_ws/src/web_interface_node/install/web_interface_node/lib/web_interface_node/web_interface_node/web_server.py
+[3.822s] -- Installing: /home/forgers/ros2_ws/src/web_interface_node/install/web_interface_node/lib/web_interface_node/web_interface_node/install
+[3.823s] -- Installing: /home/forgers/ros2_ws/src/web_interface_node/install/web_interface_node/lib/web_interface_node/web_interface_node/install/setup.sh
+[3.824s] -- Installing: /home/forgers/ros2_ws/src/web_interface_node/install/web_interface_node/lib/web_interface_node/web_interface_node/install/local_setup.bash
+[3.825s] -- Installing: /home/forgers/ros2_ws/src/web_interface_node/install/web_interface_node/lib/web_interface_node/web_interface_node/install/COLCON_IGNORE
+[3.826s] -- Installing: /home/forgers/ros2_ws/src/web_interface_node/install/web_interface_node/lib/web_interface_node/web_interface_node/install/setup.ps1
+[3.827s] -- Installing: /home/forgers/ros2_ws/src/web_interface_node/install/web_interface_node/lib/web_interface_node/web_interface_node/install/.colcon_install_layout
+[3.828s] -- Installing: /home/forgers/ros2_ws/src/web_interface_node/install/web_interface_node/lib/web_interface_node/web_interface_node/install/_local_setup_util_sh.py
+[3.829s] -- Installing: /home/forgers/ros2_ws/src/web_interface_node/install/web_interface_node/lib/web_interface_node/web_interface_node/install/local_setup.sh
+[3.830s] -- Installing: /home/forgers/ros2_ws/src/web_interface_node/install/web_interface_node/lib/web_interface_node/web_interface_node/install/setup.bash
+[3.831s] -- Installing: /home/forgers/ros2_ws/src/web_interface_node/install/web_interface_node/lib/web_interface_node/web_interface_node/install/setup.zsh
+[3.832s] -- Installing: /home/forgers/ros2_ws/src/web_interface_node/install/web_interface_node/lib/web_interface_node/web_interface_node/install/_local_setup_util_ps1.py
+[3.834s] -- Installing: /home/forgers/ros2_ws/src/web_interface_node/install/web_interface_node/lib/web_interface_node/web_interface_node/install/local_setup.zsh
+[3.835s] -- Installing: /home/forgers/ros2_ws/src/web_interface_node/install/web_interface_node/lib/web_interface_node/web_interface_node/install/local_setup.ps1
+[3.836s] -- Installing: /home/forgers/ros2_ws/src/web_interface_node/install/web_interface_node/lib/web_interface_node/web_interface_node/__init__.py
+[3.837s] -- Installing: /home/forgers/ros2_ws/src/web_interface_node/install/web_interface_node/lib/web_interface_node/web_interface_node/build
+[3.838s] -- Installing: /home/forgers/ros2_ws/src/web_interface_node/install/web_interface_node/lib/web_interface_node/web_interface_node/build/COLCON_IGNORE
+[3.839s] -- Installing: /home/forgers/ros2_ws/src/web_interface_node/install/web_interface_node/lib/web_interface_node/web_interface_node/build/.built_by
+[3.840s] -- Installing: /home/forgers/ros2_ws/src/web_interface_node/install/web_interface_node/share/web_interface_node/web
+[3.840s] -- Installing: /home/forgers/ros2_ws/src/web_interface_node/install/web_interface_node/share/web_interface_node/web/index.html
+[3.842s] [31mCMake Error at cmake_install.cmake:54 (file):
+[3.842s]   file INSTALL cannot find
+[3.843s]   "/home/forgers/ros2_ws/src/web_interface_node/ros2_ws/src/web_interface_node/web_interface_node/web_server.py":
+[3.843s]   No such file or directory.
+[3.844s] 
+[3.844s] [0m
+[3.848s] Invoked command in '/home/forgers/ros2_ws/src/web_interface_node/build/web_interface_node' returned '1': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/forgers/ros2_ws/src/web_interface_node/build/web_interface_node
